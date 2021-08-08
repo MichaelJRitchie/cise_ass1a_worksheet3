@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cise-ass1a-worksheet3 && npm run build --prefix cise-ass1a-worksheet3"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,14 @@
   },
   "homepage": "https://github.com/MichaelJRitchie/cise_ass1a_worksheet3#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "config": "^3.3.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.13.5",
+    "react-router-dom": "^5.2.0",
     "validation": "0.0.1"
   },
   "devDependencies": {
