@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: MichaelJRitchie/heroku-deploy@v3.12.12 # This is the action
+      - uses: MichaelJRitchie/cise_ass1a_worksheet3 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "cise-ass1a-worksheet3-mr" #Must be unique in Heroku
